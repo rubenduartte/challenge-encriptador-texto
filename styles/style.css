@@ -1,0 +1,142 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    background-color: black;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    font-size:3.125rem;
+    padding: 1% 0% 0% 0%;
+    font-family: "Nabla", system-ui;
+}
+
+.main{
+    width: 90%;
+    height: 65%;
+    padding: 0% 0% 0% 4%;
+}
+
+.instruccion{
+    width: 43%;
+    margin: 2% 0% 0% 6%;
+    font-weight: 600;
+}
+
+.main__campos{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 10% 0% 10%;
+} 
+
+#textoIngresado{
+    width: 35%;
+    background-color: rgba(0, 110, 200, 0.2);
+    border: 3px solid orange;
+    border-style: double;
+    border-radius: 10px;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#textoSalida{
+    width: 35%;
+    background-color: rgba(0, 110, 200, 0.2);
+    border: 3px solid orange;
+    border-style: double;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.main__botones{
+    height: 40px;
+    width: 80%;
+    display: flex;
+    padding: 3%;
+    margin: 0% 0% 0% 6.5%;
+    gap: 20px;
+}
+
+#encriptar , #desencriptar , #copiar{
+    width: 130px;
+    background-color: transparent;
+    color: chartreuse;
+    border: 3.5px;
+    border-color: white;
+    border-radius: 20px;
+    border-style: groove;
+    background-color: rgba(200, 210, 230, 0.2);
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+}
+
+/*
+.main__copiar{
+    margin: 0% 0% 0% 26%;
+    height: 40px;
+    width: 22%;
+    background-color: transparent;
+    color: chartreuse;
+    border: 3.5px;
+    border-color: blue;
+    border-radius: 20px;
+    border-style: groove;
+    background-color: rgba(200, 200, 100, 0.2);
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+}
+*/    
+
+.footer{
+    width: 100vw;
+    height: 4%;
+    display: flex;
+    justify-content: space-around;
+    background-color: darkcyan;
+    color: aquamarine;
+    margin: 4% 0% 0% 0%;
+    font-size: 0.84rem;
+}
+
+#viewport{
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #1c1c1d;
+    opacity: o.5;
+    mix-blend-mode: overlay;
+}
